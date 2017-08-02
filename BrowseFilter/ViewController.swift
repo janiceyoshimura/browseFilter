@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 
     // Style Outlets
     @IBOutlet weak var styleBohoLabel: UIButton!
-    @IBOutlet weak var styleGlamorousLabel: UIButton!
+    @IBOutlet weak var styleElegantLabel: UIButton!
     @IBOutlet weak var styleClassicLabel: UIButton!
     @IBOutlet weak var styleConservativeLabel: UIButton!
     @IBOutlet weak var styleSexyLabel: UIButton!
@@ -75,7 +75,7 @@ class ViewController: UIViewController {
         defaultLabelFormatting(buttonLabelName: price4ButtonLabel)
         
         defaultLabelFormatting(buttonLabelName: styleBohoLabel)
-        defaultLabelFormatting(buttonLabelName: styleGlamorousLabel)
+        defaultLabelFormatting(buttonLabelName: styleElegantLabel)
         defaultLabelFormatting(buttonLabelName: styleClassicLabel)
         defaultLabelFormatting(buttonLabelName: styleConservativeLabel)
         defaultLabelFormatting(buttonLabelName: styleSexyLabel)
@@ -148,8 +148,8 @@ class ViewController: UIViewController {
         changeButtonColor(buttonName: styleBohoLabel)
     }
     
-    @IBAction func styleGlamorousPressed(_ sender: UIButton) {
-        changeButtonColor(buttonName: styleGlamorousLabel)
+    @IBAction func styleElegantPressed(_ sender: UIButton) {
+        changeButtonColor(buttonName: styleElegantLabel)
     }
     
     @IBAction func styleClassicPressed(_ sender: UIButton) {

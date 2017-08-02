@@ -136,7 +136,7 @@
                                 <rect key="frame" x="36" y="143" width="303" height="27"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ahm-Nt-nDr">
-                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="27"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="46.5" height="27"/>
                                         <color key="backgroundColor" white="0.94422743060000003" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <state key="normal" title="Boho">
@@ -147,18 +147,18 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mkm-zK-bQL">
-                                        <rect key="frame" x="51.5" y="0.0" width="93.5" height="27"/>
+                                        <rect key="frame" x="56.5" y="0.0" width="67" height="27"/>
                                         <color key="backgroundColor" white="0.94422743060000003" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <state key="normal" title="Glamourous">
+                                        <state key="normal" title="Elegant">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="styleGlamorousPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="LgU-h9-h0c"/>
+                                            <action selector="styleElegantPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="BLI-aw-TRL"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fd4-Pg-oU2">
-                                        <rect key="frame" x="155" y="0.0" width="56.5" height="27"/>
+                                        <rect key="frame" x="133.5" y="0.0" width="63.5" height="27"/>
                                         <color key="backgroundColor" white="0.94422743060000003" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <state key="normal" title="Classic">
@@ -169,7 +169,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOb-Ie-ccJ">
-                                        <rect key="frame" x="221.5" y="0.0" width="81.5" height="27"/>
+                                        <rect key="frame" x="207" y="0.0" width="96" height="27"/>
                                         <color key="backgroundColor" white="0.94422743060000003" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <state key="normal" title="Dramatic">
@@ -645,8 +645,8 @@
                         <outlet property="styleClassicLabel" destination="Fd4-Pg-oU2" id="1m9-RF-pau"/>
                         <outlet property="styleConservativeLabel" destination="pqL-Gd-zYF" id="OT2-L5-Vo5"/>
                         <outlet property="styleDramaticLabel" destination="GOb-Ie-ccJ" id="2id-Kf-T67"/>
+                        <outlet property="styleElegantLabel" destination="Mkm-zK-bQL" id="zsA-fE-pJ2"/>
                         <outlet property="styleEtherealLabel" destination="Sku-TR-blB" id="YAy-Ml-OmO"/>
-                        <outlet property="styleGlamorousLabel" destination="Mkm-zK-bQL" id="Y6m-Lw-PY4"/>
                         <outlet property="styleHalterButton" destination="AG2-6P-jgu" id="Iye-Ly-GFG"/>
                         <outlet property="styleHalterLabel" destination="q86-td-nIA" id="Kfv-8q-zap"/>
                         <outlet property="styleIllusionButton" destination="W1E-FW-m83" id="gqg-oB-Uy1"/>
