@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ltd-bg-OlE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ltd-bg-OlE">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -47,7 +47,7 @@
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="price1ButtonPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="Tzu-WI-yzH"/>
+                                            <action selector="price1ButtonPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="jdj-xd-ua2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byk-65-PN9">
@@ -58,7 +58,7 @@
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="price2ButtonPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="4LH-X0-axZ"/>
+                                            <action selector="price2ButtonPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="0aF-4D-hnw"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOD-rU-ZMf">
@@ -69,7 +69,7 @@
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="price3ButtonPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="VDj-bf-vca"/>
+                                            <action selector="price3ButtonPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="5aG-5j-ItW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0Y-MB-fRF">
@@ -80,7 +80,7 @@
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="price4ButtonPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="MMW-zI-d9Y"/>
+                                            <action selector="price4ButtonPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="svc-of-4Pb"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -142,6 +142,9 @@
                                         <state key="normal" title="Boho">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="styleBohoPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="tDC-VY-8Y1"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mkm-zK-bQL">
                                         <rect key="frame" x="51.5" y="0.0" width="93.5" height="27"/>
@@ -150,6 +153,9 @@
                                         <state key="normal" title="Glamourous">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="styleGlamorousPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="LgU-h9-h0c"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fd4-Pg-oU2">
                                         <rect key="frame" x="155" y="0.0" width="56.5" height="27"/>
@@ -158,6 +164,9 @@
                                         <state key="normal" title="Classic">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="styleClassicPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="fm4-VS-t1D"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOb-Ie-ccJ">
                                         <rect key="frame" x="221.5" y="0.0" width="81.5" height="27"/>
@@ -166,6 +175,9 @@
                                         <state key="normal" title="Dramatic">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="styleDramaticPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="3o3-xo-L37"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -179,6 +191,9 @@
                                         <state key="normal" title="Conservative">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="styleConservativePressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="Oep-us-bHV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wnr-cz-XcN">
                                         <rect key="frame" x="109.5" y="0.0" width="40.5" height="27"/>
@@ -187,6 +202,9 @@
                                         <state key="normal" title="Sexy">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="styleSexyPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="bCa-Dd-qxF"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sku-TR-blB">
                                         <rect key="frame" x="160" y="0.0" width="63.5" height="27"/>
@@ -195,6 +213,9 @@
                                         <state key="normal" title="Ethereal">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="styleEtherealPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="K4L-Rz-NsL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzR-OL-q7K">
                                         <rect key="frame" x="233.5" y="0.0" width="69.5" height="27"/>
@@ -203,6 +224,9 @@
                                         <state key="normal" title="Modern">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="styleModernPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="Z6M-Bw-gMe"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -429,7 +453,7 @@
                                 <state key="normal" title="Bateau"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.98784381151199341" green="0.92677038908004761" blue="0.95285969972610474" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.9882352941176471" green="0.92549019607843142" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ptm-0G-Fnz" firstAttribute="leading" secondItem="NWv-hC-Saf" secondAttribute="leading" id="0tw-vz-Kz0"/>
                             <constraint firstItem="BOo-FI-eoR" firstAttribute="top" secondItem="P7Y-gu-INJ" secondAttribute="bottom" constant="5" id="22f-Qd-teW"/>

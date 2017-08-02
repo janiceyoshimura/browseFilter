@@ -48,46 +48,37 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        price1ButtonLabel.layer.cornerRadius = 14
-        price2ButtonLabel.layer.cornerRadius = 14
-        price3ButtonLabel.layer.cornerRadius = 14
-        price4ButtonLabel.layer.cornerRadius = 14
-        price1ButtonLabel.backgroundColor = UIColor(red:0.97, green:0.97, blue:0.98, alpha:1.0)
-        
-        styleBohoLabel.layer.cornerRadius = 14
-        styleGlamorousLabel.layer.cornerRadius = 14
-        styleClassicLabel.layer.cornerRadius = 14
-        styleConservativeLabel.layer.cornerRadius = 14
-        styleSexyLabel.layer.cornerRadius = 14
-        styleEtherealLabel.layer.cornerRadius = 14
-        styleModernLabel.layer.cornerRadius = 14
-        styleDramaticLabel.layer.cornerRadius = 14
 
-        styleBateauLabel.layer.masksToBounds = true
-        styleBateauLabel.layer.cornerRadius = 10
         
-        styleHalterLabel.layer.masksToBounds = true
-        styleHalterLabel.layer.cornerRadius = 10
-        styleIllusionLabel.layer.masksToBounds = true
-        styleIllusionLabel.layer.cornerRadius = 10
-        styleOffTheShoulderLabel.layer.masksToBounds = true
-        styleOffTheShoulderLabel.layer.cornerRadius = 10
-        styleSweetheartLabel.layer.masksToBounds = true
-        styleSweetheartLabel.layer.cornerRadius = 10
-        styleVNeckLabel.layer.masksToBounds = true
-        styleVNeckLabel.layer.cornerRadius = 10
-        styleJewelLabel.layer.masksToBounds = true
-        styleJewelLabel.layer.cornerRadius = 10
+        defaultLabelFormatting(buttonLabelName: price1ButtonLabel)
+        defaultLabelFormatting(buttonLabelName: price2ButtonLabel)
+        defaultLabelFormatting(buttonLabelName: price3ButtonLabel)
+        defaultLabelFormatting(buttonLabelName: price4ButtonLabel)
         
-        silhouetteALineLabel.layer.masksToBounds = true
-        silhouetteALineLabel.layer.cornerRadius = 10
-        silhouetteBallgownLabel.layer.masksToBounds = true
-        silhouetteBallgownLabel.layer.cornerRadius = 10
-        silhouetteMermaidLabel.layer.masksToBounds = true
-        silhouetteMermaidLabel.layer.cornerRadius = 10
-        silhouetteSheathLabel.layer.masksToBounds = true
-        silhouetteSheathLabel.layer.cornerRadius = 10
+        defaultLabelFormatting(buttonLabelName: styleBohoLabel)
+        defaultLabelFormatting(buttonLabelName: styleGlamorousLabel)
+        defaultLabelFormatting(buttonLabelName: styleClassicLabel)
+        defaultLabelFormatting(buttonLabelName: styleConservativeLabel)
+        defaultLabelFormatting(buttonLabelName: styleSexyLabel)
+        defaultLabelFormatting(buttonLabelName: styleEtherealLabel)
+        defaultLabelFormatting(buttonLabelName: styleModernLabel)
+        defaultLabelFormatting(buttonLabelName: styleDramaticLabel)
+        
+        
+
+        defaultIconLabelFormatting(labelName: styleBateauLabel)
+        defaultIconLabelFormatting(labelName: styleHalterLabel)
+        defaultIconLabelFormatting(labelName: styleIllusionLabel)
+        defaultIconLabelFormatting(labelName: styleOffTheShoulderLabel)
+        defaultIconLabelFormatting(labelName: styleSweetheartLabel)
+        defaultIconLabelFormatting(labelName: styleVNeckLabel)
+        defaultIconLabelFormatting(labelName: styleJewelLabel)
+        
+        defaultIconLabelFormatting(labelName: silhouetteALineLabel)
+        defaultIconLabelFormatting(labelName: silhouetteBallgownLabel)
+        defaultIconLabelFormatting(labelName: silhouetteMermaidLabel)
+        defaultIconLabelFormatting(labelName: silhouetteSheathLabel)
+
         
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -117,21 +108,80 @@ class ViewController: UIViewController {
     //IB Actions
     
     @IBAction func price1ButtonPressed(_ sender: UIButton) {
-        self.changeButtonColor(buttonName: price1ButtonLabel)
-
+        changeButtonColor(buttonName: price1ButtonLabel)
     }
     
+    @IBAction func price2ButtonPressed(_ sender: UIButton) {
+        changeButtonColor(buttonName: price2ButtonLabel)
+    }
+    
+    @IBAction func price3ButtonPressed(_ sender: UIButton) {
+        changeButtonColor(buttonName: price3ButtonLabel)
+    }
+    
+    @IBAction func price4ButtonPressed(_ sender: UIButton) {
+        changeButtonColor(buttonName: price4ButtonLabel)
+    }
+    
+    @IBAction func styleBohoPressed(_ sender: UIButton) {
+        changeButtonColor(buttonName: styleBohoLabel)
+    }
+    
+    @IBAction func styleGlamorousPressed(_ sender: UIButton) {
+        changeButtonColor(buttonName: styleGlamorousLabel)
+    }
+    
+    @IBAction func styleClassicPressed(_ sender: UIButton) {
+        changeButtonColor(buttonName: styleClassicLabel)
+    }
+    
+    @IBAction func styleDramaticPressed(_ sender: UIButton) {
+        changeButtonColor(buttonName: styleDramaticLabel)
+    }
+
+    @IBAction func styleConservativePressed(_ sender: UIButton) {
+        changeButtonColor(buttonName: styleConservativeLabel)
+    }
+    
+    @IBAction func styleSexyPressed(_ sender: UIButton) {
+        changeButtonColor(buttonName: styleSexyLabel)
+    }
+    
+    @IBAction func styleEtherealPressed(_ sender: UIButton) {
+        changeButtonColor(buttonName: styleEtherealLabel)
+    }
+    
+    @IBAction func styleModernPressed(_ sender: UIButton) {
+        changeButtonColor(buttonName: styleModernLabel)
+    }
+    
+    
+    
+    // Helper functions
+    
+    // Change the button color from pink to grey
     func changeButtonColor(buttonName: UIButton) {
         if buttonName.backgroundColor == UIColor(red:0.97, green:0.97, blue:0.98, alpha:1.0) {
-            buttonName.backgroundColor = UIColor(red:0.97, green:0.75, blue:0.83, alpha:1.0)
+            buttonName.backgroundColor = UIColor(red:0.99, green:0.93, blue:0.95, alpha:1.0)
         }
             
-        else if buttonName.backgroundColor == UIColor(red:0.97, green:0.75, blue:0.83, alpha:1.0) {
+        else if buttonName.backgroundColor == UIColor(red:0.99, green:0.93, blue:0.95, alpha:1.0) {
             buttonName.backgroundColor = UIColor(red:0.97, green:0.97, blue:0.98, alpha:1.0)
         }
    
     }
     
+    func defaultIconLabelFormatting(labelName: UILabel) {
+        labelName.layer.cornerRadius = 10
+        labelName.layer.masksToBounds = true
+        labelName.backgroundColor = UIColor(red:0.97, green:0.97, blue:0.98, alpha:1.0)
+    }
+    
+    func defaultLabelFormatting(buttonLabelName: UIButton) {
+        buttonLabelName.layer.cornerRadius = 14
+        buttonLabelName.backgroundColor = UIColor(red:0.97, green:0.97, blue:0.98, alpha:1.0)
+    }
+
     
 }
 
