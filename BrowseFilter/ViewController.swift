@@ -117,15 +117,21 @@ class ViewController: UIViewController {
     //IB Actions
     
     @IBAction func price1ButtonPressed(_ sender: UIButton) {
-        if price1ButtonLabel.backgroundColor == UIColor(red:0.97, green:0.97, blue:0.98, alpha:1.0) {
-            price1ButtonLabel.backgroundColor = UIColor(red:0.97, green:0.75, blue:0.83, alpha:1.0)
-    }
-        
-        else if price1ButtonLabel.backgroundColor == UIColor(red:0.97, green:0.75, blue:0.83, alpha:1.0) {
-            price1ButtonLabel.backgroundColor = UIColor(red:0.97, green:0.97, blue:0.98, alpha:1.0)
-        }
+        self.changeButtonColor(buttonName: price1ButtonLabel)
 
     }
+    
+    func changeButtonColor(buttonName: UIButton) {
+        if buttonName.backgroundColor == UIColor(red:0.97, green:0.97, blue:0.98, alpha:1.0) {
+            buttonName.backgroundColor = UIColor(red:0.97, green:0.75, blue:0.83, alpha:1.0)
+        }
+            
+        else if buttonName.backgroundColor == UIColor(red:0.97, green:0.75, blue:0.83, alpha:1.0) {
+            buttonName.backgroundColor = UIColor(red:0.97, green:0.97, blue:0.98, alpha:1.0)
+        }
+   
+    }
+    
     
 }
 

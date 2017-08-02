@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "472AA3F8EFD26708749ADD631C56267524A0E47F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DF92E0E33B64BFE0E19D13A0A6944DF497F6C224" : 9223372036854775807,
+    "472AA3F8EFD26708749ADD631C56267524A0E47F" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "ED64C96E-DCCB-4439-A0C7-ACEFC35C4EAB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DF92E0E33B64BFE0E19D13A0A6944DF497F6C224" : "",
+    "472AA3F8EFD26708749ADD631C56267524A0E47F" : "BrowseFilter\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BrowseFilter",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BrowseFilter.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/janiceyoshimura\/browseFilter.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "472AA3F8EFD26708749ADD631C56267524A0E47F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/janiceyoshimura\/bitfountain-tutorial.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DF92E0E33B64BFE0E19D13A0A6944DF497F6C224"
+    }
+  ]
+}
