@@ -447,10 +447,82 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8a-Ad-AQa">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8a-Ad-AQa">
                                 <rect key="frame" x="36" y="234" width="50" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Bateau"/>
+                                <connections>
+                                    <action selector="styleBateauButtonPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="0wx-aa-EWi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AG2-6P-jgu">
+                                <rect key="frame" x="120" y="234" width="50" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="styelHalterButtonPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="RJw-0Q-bgD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1E-FW-m83">
+                                <rect key="frame" x="204" y="234" width="50" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="styleIllusionButtonPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="d16-KM-gBb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kuo-ie-I70">
+                                <rect key="frame" x="36" y="313" width="50" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="styleSweetheartButtonPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="tga-Pk-iBK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UU9-Qa-c9e">
+                                <rect key="frame" x="120" y="313" width="50" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="styleVNeckButtonPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="wfZ-vy-sx5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELa-na-DwK">
+                                <rect key="frame" x="204" y="313" width="50" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="styleJewelButtonPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="9sh-bv-TEB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeH-xP-C5P">
+                                <rect key="frame" x="289" y="234" width="50" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="styleOffTheShoulderButtonPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="fag-Ix-xEb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="204-u9-hbV">
+                                <rect key="frame" x="36" y="421" width="50" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="silhouetteALineButtonPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="OPD-ip-Akf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6g-Si-lmr">
+                                <rect key="frame" x="120" y="421" width="50" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="silhouetteBallgownButton:" destination="ltd-bg-OlE" eventType="touchUpInside" id="4BV-0I-ORh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0W-33-8bs">
+                                <rect key="frame" x="204" y="421" width="50" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="silhouetteMermaidButtonPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="PHW-Ne-EVg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2X-2N-AvK">
+                                <rect key="frame" x="289" y="421" width="50" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="silhouetteSheathButtonPressed:" destination="ltd-bg-OlE" eventType="touchUpInside" id="wKs-hv-rfC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.9882352941176471" green="0.92549019607843142" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -559,10 +631,15 @@
                         <outlet property="price3ButtonLabel" destination="JOD-rU-ZMf" id="rv5-TN-UFQ"/>
                         <outlet property="price4ButtonLabel" destination="W0Y-MB-fRF" id="nYL-w0-Qt1"/>
                         <outlet property="searchDisplayController" destination="PWj-a6-QCh" id="sfK-tV-5dO"/>
+                        <outlet property="silhouetteALineButton" destination="204-u9-hbV" id="J3a-0Y-n7K"/>
                         <outlet property="silhouetteALineLabel" destination="HaG-RP-tLi" id="9I8-au-ymA"/>
+                        <outlet property="silhouetteBallgownButton" destination="n6g-Si-lmr" id="yh0-AP-DKi"/>
                         <outlet property="silhouetteBallgownLabel" destination="kKA-tt-ykW" id="uk8-NG-Gno"/>
+                        <outlet property="silhouetteMermaidButton" destination="S0W-33-8bs" id="rPB-Bi-hZ6"/>
                         <outlet property="silhouetteMermaidLabel" destination="i2A-qQ-9Yz" id="Zhg-Gt-eap"/>
+                        <outlet property="silhouetteSheathButton" destination="d2X-2N-AvK" id="3XR-lB-dYO"/>
                         <outlet property="silhouetteSheathLabel" destination="9wh-H0-WlT" id="D33-Qw-JgQ"/>
+                        <outlet property="styleBateauButton" destination="k8a-Ad-AQa" id="Rea-fM-Zbj"/>
                         <outlet property="styleBateauLabel" destination="tPs-M7-XU0" id="CeQ-dp-n8u"/>
                         <outlet property="styleBohoLabel" destination="Ahm-Nt-nDr" id="LTA-Ie-Y2R"/>
                         <outlet property="styleClassicLabel" destination="Fd4-Pg-oU2" id="1m9-RF-pau"/>
@@ -570,13 +647,19 @@
                         <outlet property="styleDramaticLabel" destination="GOb-Ie-ccJ" id="2id-Kf-T67"/>
                         <outlet property="styleEtherealLabel" destination="Sku-TR-blB" id="YAy-Ml-OmO"/>
                         <outlet property="styleGlamorousLabel" destination="Mkm-zK-bQL" id="Y6m-Lw-PY4"/>
+                        <outlet property="styleHalterButton" destination="AG2-6P-jgu" id="Iye-Ly-GFG"/>
                         <outlet property="styleHalterLabel" destination="q86-td-nIA" id="Kfv-8q-zap"/>
+                        <outlet property="styleIllusionButton" destination="W1E-FW-m83" id="gqg-oB-Uy1"/>
                         <outlet property="styleIllusionLabel" destination="gcs-zm-Wfw" id="KaD-Ao-JhL"/>
+                        <outlet property="styleJewelButton" destination="ELa-na-DwK" id="anK-rF-ZY0"/>
                         <outlet property="styleJewelLabel" destination="Rfj-Ig-cSr" id="wRd-ab-gE9"/>
                         <outlet property="styleModernLabel" destination="vzR-OL-q7K" id="uGr-bI-svZ"/>
+                        <outlet property="styleOffTheShoulderButton" destination="ZeH-xP-C5P" id="4jU-UG-gds"/>
                         <outlet property="styleOffTheShoulderLabel" destination="ziY-fp-2aO" id="Jmp-2y-Ekd"/>
                         <outlet property="styleSexyLabel" destination="Wnr-cz-XcN" id="CIE-yi-f0H"/>
+                        <outlet property="styleSweetheartButton" destination="Kuo-ie-I70" id="DRs-v9-Mve"/>
                         <outlet property="styleSweetheartLabel" destination="ptm-0G-Fnz" id="ElM-bC-fqu"/>
+                        <outlet property="styleVNeckButton" destination="UU9-Qa-c9e" id="7hs-ZB-Ntm"/>
                         <outlet property="styleVNeckLabel" destination="4t1-HM-pZZ" id="w0T-4Q-GLj"/>
                     </connections>
                 </viewController>

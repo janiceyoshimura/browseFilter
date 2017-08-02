@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var price3ButtonLabel: UIButton!
     @IBOutlet weak var price4ButtonLabel: UIButton!
 
-    //Style Outlets
+    // Style Outlets
     @IBOutlet weak var styleBohoLabel: UIButton!
     @IBOutlet weak var styleGlamorousLabel: UIButton!
     @IBOutlet weak var styleClassicLabel: UIButton!
@@ -38,11 +38,30 @@ class ViewController: UIViewController {
     @IBOutlet weak var styleJewelLabel: UILabel!
     @IBOutlet weak var styleVNeckLabel: UILabel!
     
-    //Silhouette Outlets
+    
+    // Transparent overlay buttons for neckline
+    
+    @IBOutlet weak var styleBateauButton: UIButton!
+    @IBOutlet weak var styleHalterButton: UIButton!
+    @IBOutlet weak var styleIllusionButton: UIButton!
+    @IBOutlet weak var styleSweetheartButton: UIButton!
+    @IBOutlet weak var styleVNeckButton: UIButton!
+    @IBOutlet weak var styleJewelButton: UIButton!
+    @IBOutlet weak var styleOffTheShoulderButton: UIButton!
+    
+    
+    
+    // Silhouette Outlets
     @IBOutlet weak var silhouetteALineLabel: UILabel!
     @IBOutlet weak var silhouetteMermaidLabel: UILabel!
     @IBOutlet weak var silhouetteSheathLabel: UILabel!
     @IBOutlet weak var silhouetteBallgownLabel: UILabel!
+    
+    // Transparent overlay for silhouette butttons
+    @IBOutlet weak var silhouetteALineButton: UIButton!
+    @IBOutlet weak var silhouetteBallgownButton: UIButton!
+    @IBOutlet weak var silhouetteMermaidButton: UIButton!
+    @IBOutlet weak var silhouetteSheathButton: UIButton!
     
     
     
@@ -105,8 +124,9 @@ class ViewController: UIViewController {
     }
 
     
-    //IB Actions
+    // IB Actions
     
+    // Price labels
     @IBAction func price1ButtonPressed(_ sender: UIButton) {
         changeButtonColor(buttonName: price1ButtonLabel)
     }
@@ -123,6 +143,7 @@ class ViewController: UIViewController {
         changeButtonColor(buttonName: price4ButtonLabel)
     }
     
+    // Style labels
     @IBAction func styleBohoPressed(_ sender: UIButton) {
         changeButtonColor(buttonName: styleBohoLabel)
     }
@@ -156,6 +177,45 @@ class ViewController: UIViewController {
     }
     
     
+    // Neckline icon labels
+    
+    @IBAction func styleBateauButtonPressed(_ sender: UIButton) {
+        changeIconButtonColor(iconButtonName: styleBateauButton, labelName: styleBateauLabel)
+    }
+    @IBAction func styelHalterButtonPressed(_ sender: UIButton) {
+        changeIconButtonColor(iconButtonName: styleHalterButton, labelName: styleHalterLabel)
+    }
+    @IBAction func styleIllusionButtonPressed(_ sender: UIButton) {
+        changeIconButtonColor(iconButtonName: styleIllusionButton, labelName: styleIllusionLabel)
+    }
+    @IBAction func styleSweetheartButtonPressed(_ sender: UIButton) {
+        changeIconButtonColor(iconButtonName: styleSweetheartButton, labelName: styleSweetheartLabel)
+    }
+    @IBAction func styleVNeckButtonPressed(_ sender: UIButton) {
+        changeIconButtonColor(iconButtonName: styleVNeckButton, labelName: styleVNeckLabel)
+    }
+    @IBAction func styleJewelButtonPressed(_ sender: UIButton) {
+        changeIconButtonColor(iconButtonName: styleJewelButton, labelName: styleJewelLabel)
+    }
+    @IBAction func styleOffTheShoulderButtonPressed(_ sender: UIButton) {
+        changeIconButtonColor(iconButtonName: styleOffTheShoulderButton, labelName: styleOffTheShoulderLabel)
+    }
+    
+    @IBAction func silhouetteALineButtonPressed(_ sender: UIButton) {
+        changeIconButtonColor(iconButtonName: silhouetteALineButton, labelName: silhouetteALineLabel)
+    }
+    @IBAction func silhouetteBallgownButton(_ sender: UIButton) {
+        changeIconButtonColor(iconButtonName: silhouetteBallgownButton, labelName: silhouetteBallgownLabel)
+    }
+    @IBAction func silhouetteMermaidButtonPressed(_ sender: UIButton) {
+        changeIconButtonColor(iconButtonName: silhouetteMermaidButton, labelName: silhouetteMermaidLabel)
+    }
+    @IBAction func silhouetteSheathButtonPressed(_ sender: UIButton) {
+        changeIconButtonColor(iconButtonName: silhouetteSheathButton, labelName: silhouetteSheathLabel)
+    }
+    
+    
+    
     
     // Helper functions
     
@@ -171,10 +231,23 @@ class ViewController: UIViewController {
    
     }
     
+    // Change the icon label from pink to white based on the overlay button
+    func changeIconButtonColor (iconButtonName: UIButton, labelName: UILabel) {
+        if labelName.backgroundColor == UIColor.white {
+            labelName.backgroundColor = UIColor(red:0.99, green:0.93, blue:0.95, alpha:1.0)
+        }
+        else if labelName.backgroundColor == UIColor(red:0.99, green:0.93, blue:0.95, alpha:1.0) {
+            labelName.backgroundColor = UIColor.white
+        }
+
+    }
+    
+    
+    // Default formatting for buttons with and without icons
     func defaultIconLabelFormatting(labelName: UILabel) {
         labelName.layer.cornerRadius = 10
         labelName.layer.masksToBounds = true
-        labelName.backgroundColor = UIColor(red:0.97, green:0.97, blue:0.98, alpha:1.0)
+        labelName.backgroundColor = UIColor.white
     }
     
     func defaultLabelFormatting(buttonLabelName: UIButton) {
