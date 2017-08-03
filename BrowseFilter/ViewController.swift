@@ -64,11 +64,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var silhouetteSheathButton: UIButton!
     
     
-    // Location label
-    @IBOutlet weak var mileSearchRadius: UILabel!
+    // Location objects
+    @IBOutlet weak var sliderRadiusLabel: UILabel!
     @IBOutlet weak var enterLocationText: UITextField!
+    @IBOutlet weak var locationRadiusSlider: UISlider!
 
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -110,21 +110,20 @@ class ViewController: UIViewController {
         
         // Resign first responder status
         
-        //Looks for single or multiple taps.
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
+            //Looks for single or multiple taps.
+            let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         
-        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
-        //tap.cancelsTouchesInView = false
+            //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+            //tap.cancelsTouchesInView = false
         
-        view.addGestureRecognizer(tap)
-    }
+            view.addGestureRecognizer(tap)
+            }
     
-    //Calls this function when the tap is recognized.
-    func dismissKeyboard() {
-        //Causes the view (or one of its embedded text fields) to resign the first responder status.
-        view.endEditing(true)
-        
-        // end of pasted code
+            //Calls this function when the tap is recognized.
+            func dismissKeyboard() {
+                //Causes the view (or one of its embedded text fields) to resign the first responder status.
+                view.endEditing(true)
+
 
         
         
@@ -245,8 +244,15 @@ class ViewController: UIViewController {
         changeIconButtonColor(iconButtonName: silhouetteSheathButton, labelName: silhouetteSheathLabel)
     }
     
+    // Slider update
     
-    
+    @IBAction func radiusSliderUpdateLabel(_ sender: UISlider)
+    {
+    if (sender == locationRadiusSlider) {
+        sliderRadiusLabel.text = "\(Int(locationRadiusSlider.value))"
+    }
+    }
+
     
     // Helper functions
     

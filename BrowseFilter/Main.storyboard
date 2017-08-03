@@ -502,6 +502,9 @@
                                 <rect key="frame" x="84" y="545.5" width="207" height="31"/>
                                 <color key="tintColor" red="1" green="0.71798533909999995" blue="0.80011212549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="minimumTrackTintColor" red="1" green="0.71798533909999995" blue="0.80011212549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="radiusSliderUpdateLabel:" destination="ltd-bg-OlE" eventType="valueChanged" id="nui-u7-eQ1"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location search radius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qog-q4-4VC">
                                 <rect key="frame" x="36" y="530" width="124" height="13.5"/>
@@ -521,9 +524,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;# in slider&gt; mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6I-C5-6HV">
-                                <rect key="frame" x="163" y="530" width="119" height="14"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6I-C5-6HV">
+                                <rect key="frame" x="165" y="530" width="14" height="13.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -534,6 +536,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsc-cU-bUg">
+                                <rect key="frame" x="184" y="530" width="27.5" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.9882352941176471" green="0.92549019607843142" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -571,6 +579,7 @@
                             <constraint firstItem="W1E-FW-m83" firstAttribute="baseline" secondItem="AG2-6P-jgu" secondAttribute="baseline" id="BAD-Ox-T8y"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9kS-Xv-lxO" secondAttribute="trailing" constant="20" id="Bdz-LT-Lx3"/>
                             <constraint firstItem="Kuo-ie-I70" firstAttribute="bottom" secondItem="ptm-0G-Fnz" secondAttribute="bottom" id="BsD-VZ-5CE"/>
+                            <constraint firstItem="v6I-C5-6HV" firstAttribute="leading" secondItem="Qog-q4-4VC" secondAttribute="trailing" constant="5" id="Cu0-qh-mQD"/>
                             <constraint firstItem="cj7-oZ-hG4" firstAttribute="top" secondItem="I2q-P7-2uu" secondAttribute="bottom" constant="20" id="DzL-CW-nUM"/>
                             <constraint firstItem="Kuo-ie-I70" firstAttribute="top" secondItem="UU9-Qa-c9e" secondAttribute="top" id="EDd-Ja-Dtn"/>
                             <constraint firstItem="lkh-Lx-bfS" firstAttribute="leading" secondItem="y8k-xi-bhc" secondAttribute="leading" id="Efb-pC-mdM"/>
@@ -609,6 +618,7 @@
                             <constraint firstItem="oMl-gd-XBx" firstAttribute="leading" secondItem="Kg9-Jd-gkh" secondAttribute="leadingMargin" constant="20" id="PBw-Ui-jng"/>
                             <constraint firstItem="W1E-FW-m83" firstAttribute="top" secondItem="k8a-Ad-AQa" secondAttribute="top" id="PHO-5M-RwK"/>
                             <constraint firstItem="204-u9-hbV" firstAttribute="bottom" secondItem="n6g-Si-lmr" secondAttribute="bottom" id="PK2-o7-aKB"/>
+                            <constraint firstItem="v6I-C5-6HV" firstAttribute="centerY" secondItem="rsc-cU-bUg" secondAttribute="centerY" id="PXz-Qk-YPs"/>
                             <constraint firstItem="W1E-FW-m83" firstAttribute="firstBaseline" secondItem="k8a-Ad-AQa" secondAttribute="firstBaseline" id="PYk-vU-5Nu"/>
                             <constraint firstItem="4Sv-8u-hKT" firstAttribute="top" secondItem="Qog-q4-4VC" secondAttribute="bottom" constant="11" id="PaQ-mb-ln9"/>
                             <constraint firstItem="0jI-vb-6Tg" firstAttribute="leading" secondItem="y8k-xi-bhc" secondAttribute="trailing" constant="34" id="R0k-Op-Pfi"/>
@@ -622,6 +632,7 @@
                             <constraint firstItem="d2X-2N-AvK" firstAttribute="trailing" secondItem="96A-FK-waR" secondAttribute="trailing" id="Tzy-a5-H2W"/>
                             <constraint firstItem="mvB-Fh-uVC" firstAttribute="top" secondItem="FmV-L9-jXC" secondAttribute="bottom" constant="5" id="U9N-zb-nPX"/>
                             <constraint firstItem="ELa-na-DwK" firstAttribute="baseline" secondItem="Kuo-ie-I70" secondAttribute="baseline" id="UDU-hJ-iDw"/>
+                            <constraint firstItem="v6I-C5-6HV" firstAttribute="baseline" secondItem="Qog-q4-4VC" secondAttribute="baseline" id="UWI-rh-Ygx"/>
                             <constraint firstItem="204-u9-hbV" firstAttribute="baseline" secondItem="n6g-Si-lmr" secondAttribute="baseline" id="Ulz-4t-y2B"/>
                             <constraint firstItem="9bI-dn-G6d" firstAttribute="top" secondItem="FmV-L9-jXC" secondAttribute="bottom" constant="5" id="VQO-Vu-BUN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="UFr-04-z8O" secondAttribute="trailing" constant="20" id="VS4-Mn-n7d"/>
@@ -643,6 +654,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="J7K-JX-IOq" secondAttribute="trailing" constant="20" id="aYg-qq-MJW"/>
                             <constraint firstItem="d2X-2N-AvK" firstAttribute="firstBaseline" secondItem="n6g-Si-lmr" secondAttribute="firstBaseline" id="ajQ-an-Cen"/>
                             <constraint firstItem="ppO-sV-qGX" firstAttribute="leading" secondItem="Kg9-Jd-gkh" secondAttribute="leadingMargin" constant="20" id="azz-d9-wuD"/>
+                            <constraint firstItem="rsc-cU-bUg" firstAttribute="leading" secondItem="v6I-C5-6HV" secondAttribute="trailing" constant="5" id="bI7-LR-p6U"/>
                             <constraint firstItem="Rfj-Ig-cSr" firstAttribute="leading" secondItem="sEY-Ih-Syp" secondAttribute="leading" id="bUL-i2-1ZY"/>
                             <constraint firstItem="204-u9-hbV" firstAttribute="bottom" secondItem="d2X-2N-AvK" secondAttribute="bottom" id="bzr-Tt-nWY"/>
                             <constraint firstItem="kKA-tt-ykW" firstAttribute="leading" secondItem="CeG-b9-eeV" secondAttribute="leading" id="cJ5-Nt-dZ2"/>
@@ -671,6 +683,7 @@
                             <constraint firstItem="Rfj-Ig-cSr" firstAttribute="width" secondItem="ptm-0G-Fnz" secondAttribute="width" id="jkD-d1-eEp"/>
                             <constraint firstItem="o3Q-MX-QGb" firstAttribute="top" secondItem="Qog-q4-4VC" secondAttribute="bottom" constant="2.5" id="jzS-Ga-kwJ"/>
                             <constraint firstItem="AG2-6P-jgu" firstAttribute="trailing" secondItem="n6g-Si-lmr" secondAttribute="trailing" id="kOA-0U-ZXn"/>
+                            <constraint firstItem="rsc-cU-bUg" firstAttribute="centerY" secondItem="v6I-C5-6HV" secondAttribute="centerY" id="kQv-Cs-nGV"/>
                             <constraint firstItem="lkh-Lx-bfS" firstAttribute="width" secondItem="NWv-hC-Saf" secondAttribute="width" id="kZt-G4-3xz"/>
                             <constraint firstItem="lkh-Lx-bfS" firstAttribute="top" secondItem="ibQ-4w-rs9" secondAttribute="bottom" constant="2" id="kmF-h8-UbX"/>
                             <constraint firstItem="ELa-na-DwK" firstAttribute="leading" secondItem="W1E-FW-m83" secondAttribute="leading" id="koq-5j-rFx"/>
@@ -716,7 +729,7 @@
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="enterLocationText" destination="Zbr-lf-YSK" id="Y3d-Vb-5gA"/>
-                        <outlet property="mileSearchRadius" destination="v6I-C5-6HV" id="dms-HU-qLR"/>
+                        <outlet property="locationRadiusSlider" destination="o3Q-MX-QGb" id="EGA-nq-GS6"/>
                         <outlet property="price1ButtonLabel" destination="xvf-p8-g5l" id="wk9-hb-jrb"/>
                         <outlet property="price2ButtonLabel" destination="byk-65-PN9" id="6iX-0F-AwW"/>
                         <outlet property="price3ButtonLabel" destination="JOD-rU-ZMf" id="rv5-TN-UFQ"/>
@@ -730,6 +743,7 @@
                         <outlet property="silhouetteMermaidLabel" destination="i2A-qQ-9Yz" id="Zhg-Gt-eap"/>
                         <outlet property="silhouetteSheathButton" destination="d2X-2N-AvK" id="3XR-lB-dYO"/>
                         <outlet property="silhouetteSheathLabel" destination="9wh-H0-WlT" id="D33-Qw-JgQ"/>
+                        <outlet property="sliderRadiusLabel" destination="v6I-C5-6HV" id="h5Z-95-cbF"/>
                         <outlet property="styleBateauButton" destination="k8a-Ad-AQa" id="Rea-fM-Zbj"/>
                         <outlet property="styleBateauLabel" destination="tPs-M7-XU0" id="CeQ-dp-n8u"/>
                         <outlet property="styleBohoLabel" destination="Ahm-Nt-nDr" id="LTA-Ie-Y2R"/>
@@ -752,6 +766,7 @@
                         <outlet property="styleSweetheartLabel" destination="ptm-0G-Fnz" id="ElM-bC-fqu"/>
                         <outlet property="styleVNeckButton" destination="UU9-Qa-c9e" id="7hs-ZB-Ntm"/>
                         <outlet property="styleVNeckLabel" destination="4t1-HM-pZZ" id="w0T-4Q-GLj"/>
+                        <outletCollection property="locationRadiusSlider" destination="o3Q-MX-QGb" collectionClass="NSMutableArray" id="UMr-7C-yG3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QGW-UO-QE1" userLabel="First Responder" sceneMemberID="firstResponder"/>
