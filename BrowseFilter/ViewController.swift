@@ -64,10 +64,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var silhouetteSheathButton: UIButton!
     
     
+    // Location label
+    @IBOutlet weak var mileSearchRadius: UILabel!
+    @IBOutlet weak var enterLocationText: UITextField!
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+            
+        // Reformat the buttons
         defaultLabelFormatting(buttonLabelName: price1ButtonLabel)
         defaultLabelFormatting(buttonLabelName: price2ButtonLabel)
         defaultLabelFormatting(buttonLabelName: price3ButtonLabel)
@@ -97,15 +105,39 @@ class ViewController: UIViewController {
         defaultIconLabelFormatting(labelName: silhouetteMermaidLabel)
         defaultIconLabelFormatting(labelName: silhouetteSheathLabel)
 
-        
-        
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        // Resign first responder status
+        
+        //Looks for single or multiple taps.
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
+        
+        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+        //tap.cancelsTouchesInView = false
+        
+        view.addGestureRecognizer(tap)
     }
+    
+    //Calls this function when the tap is recognized.
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+        
+        // end of pasted code
+
+        
+        
+    }
+
+
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     
     //Try to make a gradient background color

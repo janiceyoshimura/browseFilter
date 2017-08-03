@@ -715,6 +715,8 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
+                        <outlet property="enterLocationText" destination="Zbr-lf-YSK" id="Y3d-Vb-5gA"/>
+                        <outlet property="mileSearchRadius" destination="v6I-C5-6HV" id="dms-HU-qLR"/>
                         <outlet property="price1ButtonLabel" destination="xvf-p8-g5l" id="wk9-hb-jrb"/>
                         <outlet property="price2ButtonLabel" destination="byk-65-PN9" id="6iX-0F-AwW"/>
                         <outlet property="price3ButtonLabel" destination="JOD-rU-ZMf" id="rv5-TN-UFQ"/>
