@@ -10,7 +10,7 @@ import UIKit
 import QuartzCore
 
 class ViewController: UIViewController {
-
+    
     // IB Outlets
     
     // Price Outlets
@@ -68,7 +68,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         defaultLabelFormatting(buttonLabelName: price1ButtonLabel)
         defaultLabelFormatting(buttonLabelName: price2ButtonLabel)
         defaultLabelFormatting(buttonLabelName: price3ButtonLabel)
